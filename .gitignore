@@ -1,0 +1,11 @@
+/build
+/bin/*.log
+/.idea
+/.vscode
+/.settings
+/*.log
+*.iml
+*.project
+.DS_STORE
+/node_modules/
+*.log.*

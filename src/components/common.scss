@@ -1,0 +1,145 @@
+body {
+    background: #e2e8eb;
+    color: #37383c;
+}
+
+#root {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    //background-color: #E2E8EB;
+    // border: 5px solid greenyellow;
+}
+
+.main-content {
+    padding: 120px 50px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: white;
+}
+
+.modal-footer {
+  overflow: hidden;
+  .pagination {
+    margin: 10px 0 5px;
+    float: right;
+  }
+}
+
+.border-bt {
+    border-bottom: 1px solid #f1f2f4;
+    padding: 10px 20px;
+}
+
+.breadcrumb {
+    height: 50px;
+    .ant-breadcrumb {
+        line-height: 50px;
+    }
+}
+
+.list-title {
+    text-align: center;
+    font-weight: bold;
+    margin: 4px 0;
+    position: relative;
+    padding-right: 100px;
+    cursor: pointer;
+    .export {
+        color: #60667e;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translate3D(0, -50%, 0);
+    }
+}
+
+.list-wrapper {
+    // background-color: #fff;
+    // margin:0 50px 50px;
+    overflow: hidden;
+}
+.row {
+    margin-bottom: 10px;
+    overflow: hidden;
+    .title-bar {
+        line-height: 50px;
+        background: #fafafa;
+        color: #85878d;
+        font-weight: bold;
+        // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-left: 25px;
+        position: relative;
+    }
+    .col1 {
+        width: 50%;
+        margin-right: 10px;
+        float: left;
+    }
+    .col2 {
+        overflow: hidden;
+    }
+    .right-wrapper {
+      float: right;
+      margin-right: 20px;
+  }
+}
+// antd样式覆盖
+.my-body {
+    .ant-tabs-bar {
+        margin-bottom: 0;
+    }
+    .ant-pagination-jump-next,
+    .ant-pagination-jump-prev,
+    .ant-pagination-next,
+    .ant-pagination-prev {
+        border: 1px solid #d9d9d9;
+        background-color: #fff;
+    }
+
+  .ant-pagination-jump-next:hover,
+  .ant-pagination-jump-prev:hover,
+  .ant-pagination-next:hover,
+  .ant-pagination-prev:hover {
+    transition: all .3s;
+    color: #1890ff;
+    border-color: #1890ff;
+  }
+
+  .ant-anchor-wrapper{
+    margin-left: 0;
+    padding: 10px 20px 0 20px;
+    border-bottom: 1px solid rgba(226,232,235,1);
+    .ant-anchor-ink{
+      display: none;
+    }
+    .ant-anchor-link{
+      display: inline-block;
+      background:rgba(143,147,161,0.1);
+      border:1px solid rgba(226,232,235,1);
+      color: #8F93A1;
+      margin:0 20px 10px 0;
+      min-height: 14px;
+      padding: 0;
+      &:hover,&.ant-anchor-link-active{
+        border-color: rgba(0,156,255,1);
+        background-color: rgba(0,156,255,0.12);
+        color: #009CFF;
+      }
+      a{
+        padding: 8px 30px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .ant-affix{
+    z-index: 10;
+  }
+}

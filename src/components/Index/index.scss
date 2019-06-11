@@ -1,0 +1,15 @@
+.nav{
+    li{
+        list-style-type: none;
+        float: left;
+        margin-right: 10px;
+        line-height: 30px;
+        a{
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: yellowgreen;
+            color: #fff;
+            text-align: center;
+        }
+    }
+}

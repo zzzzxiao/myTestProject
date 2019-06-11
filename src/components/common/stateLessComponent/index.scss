@@ -1,0 +1,98 @@
+.circle {
+  background: rgba(92, 191, 254, 1);
+}
+
+.item-title {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #85878D;
+  background-color: #FAFAFA;
+  font-weight: bold;
+}
+
+.icon-text {
+  padding: 0 10px;
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+  transition: background .2s;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.search-wrapper {
+  width: 740px;
+  margin: 35px auto;
+  .ant-input {
+    border-radius: 30px;
+    height: 52px;
+    padding-left: 50px;
+  }
+  .ant-btn-lg {
+    height: 52px;
+    padding: 0 20px;
+    border-radius: 30px;
+  }
+  .ant-input-group-addon ~ .ant-input-group-addon {
+    padding: 0 20px;
+    background: #1890ff;
+    color: #fff;
+    border: 1px solid #1890ff;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+    .search-btn {
+      font-size: 16px;
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
+  .ant-input-group-addon:first-child {
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-left: 24px;
+  }
+}
+
+.my-table {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  thead {
+    td {
+      background-color: #FAFAFA;
+      color: #85878D;
+      font-size: 14px;
+      font-weight: Bold;
+    }
+  }
+  td {
+    border: 1px solid #DFDFDF;
+    line-height: 30px;
+    padding: 0 13px;
+    color: #5E616C;
+  }
+}
+
+.checkbox-list {
+  border-bottom: 1px solid rgba(226, 232, 235, 1);
+  div {
+    display: inline-block;
+    background: rgba(143, 147, 161, 0.1);
+    border: 1px solid rgba(226, 232, 235, 1);
+    color: #8F93A1;
+    margin-right: 20px;
+    padding: 4px 30px;
+    cursor: pointer;
+    &:hover, &.active {
+      border-color: rgba(0, 156, 255, 1);
+      background-color: rgba(0, 156, 255, 0.12);
+      color: #009CFF;
+    }
+  }
+}

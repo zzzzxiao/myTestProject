@@ -1,0 +1,11 @@
+.name{
+    color: red;
+}
+.filter-box{
+    .filter-col:first-child{
+        text-align: left;
+    }
+    .filter-col:last-child{
+        text-align: right;
+    }
+}

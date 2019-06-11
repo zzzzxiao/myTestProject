@@ -1,0 +1,171 @@
+$green:green;
+$white:white;
+
+.header {
+    //height: 60px;
+    //background:rgba(45,51,67,1);
+
+    // height: 60px;
+    background: #2d3343;
+    //background: #132880;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    .logo,
+    .title-info {
+        display: inline-block;
+        // vertical-align: middle;
+    }
+
+    .logo {
+        width: 210px;
+        height: 60px;
+        background: url('../../images/logo.png') center no-repeat;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .title-info {
+        line-height: 60px;
+        font-size: 18px;
+        // margin-left: -10px;
+        color: $white;
+        font-weight: bold;
+        display: inline-block;
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .title-info::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 22px;
+        background: #fff;
+        display: inline-block;
+        top: 20px;
+        left: 0;
+    }
+
+    .info {
+        margin-left: 25px;
+        padding-right: 20px;
+        display: inline-block;
+        line-height: 60px;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+        margin-left: 25px;
+        padding-right: 20px;
+        display: inline-block;
+        line-height: 60px;
+        position: relative;
+    }
+
+    .user-info {
+        padding: 0 10px;
+        color: #8a8c8f;
+        float: left;
+        position: relative;
+        border-radius: 4px;
+    }
+
+    .user {
+        width: 19px;
+        height: 20px;
+        background: url("../../images/user.png") no-repeat;
+    }
+
+    .user-manage {
+        position: absolute;
+        display: none;
+        background-color: #fff;
+        color: #265b84;
+        z-index: 1;
+        line-height: 2.4;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .text {
+        line-height: 1;
+        margin-left: 14px;
+        margin-right: 16px;
+    }
+
+    .down {
+        border-top: 5px solid #8a8c8f;
+        border-bottom: 4px solid transparent;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        margin-top: 4px;
+    }
+
+    .exit {
+        width: 24px;
+        height: 24px;
+        margin-left: 20px;
+        cursor: pointer;
+        background: url('../../images/home.png') no-repeat;
+    }
+
+    .exit:hover {
+        background: url('../../images/home-active.png') no-repeat;
+    }
+
+    .exit,
+    .text,
+    .user,
+    .down {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .user-info:hover {
+        background: rgba(37, 150, 255, 0.2);
+        color: #2596ff;
+
+        .user {
+            background: url("../../images/user-active.png") no-repeat;
+        }
+
+        .user-manage {
+            display: block;
+            cursor: pointer;
+        }
+
+        .down {
+            border-top: 4px solid transparent;
+            border-bottom: 5px solid #2596ff;
+            margin-bottom: 11px;
+        }
+    }
+
+    .nav {
+      clear: both;
+        li {
+            list-style-type: none;
+            float: left;
+            margin-right: 10px;
+            line-height: 30px;
+
+            a {
+                display: inline-block;
+                padding: 5px 10px;
+                background-color: yellowgreen;
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+}

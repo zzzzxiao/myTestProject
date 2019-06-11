@@ -1,0 +1,13 @@
+.topic{
+    overflow: hidden;
+    .left-nav{
+        float: left;
+        width: 200px;
+        border: 1px solid #eee;
+        min-height: 200px;
+    }
+    .right-content{
+        overflow: hidden;
+        min-height: 200px;
+    }
+}

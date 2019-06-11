@@ -1,0 +1,60 @@
+// 搜索结果列表展示
+.filter-type {
+  font-size: 14px;
+  $width: 80px;
+  $line-height: 45px;
+  $select-border-radius: 50%;
+  .title-info {
+    width: $width;
+    color: #8F93A1;
+    float: left;
+    font-weight: bold;
+    line-height: $line-height;
+    text-align: right;
+  }
+  .content-box {
+    position: relative;
+    margin-left: $width;
+    vertical-align: top;
+    color: #60667E;
+    .content {
+      margin-right: $width;
+      overflow: hidden;
+      li {
+        padding: 1px 10px;
+        display: inline-block;
+        margin: 11px 26px;
+        transition: background 0.2s;
+        border-radius: 30px;
+        &.active {
+          background-color: #009CFF;
+          color: #fff;
+          cursor: auto;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      &.expand {
+        overflow: auto;
+      }
+    }
+    .toggle {
+      width: $width;
+      line-height: $line-height;
+      color: #5bd29e;
+      position: absolute;
+      right: 0;
+      top: 0;
+      span {
+        cursor: pointer;
+      }
+    }
+    &.line-height {
+      height: $line-height;
+    }
+    &.overflow-hidden {
+      overflow: hidden;
+    }
+  }
+}
