@@ -8,7 +8,7 @@ export default class ES6Class extends Component {
     }
     render() {
         return <div>
-            homeWork;
+            自主学习中。。
         </div>
     }
 }
