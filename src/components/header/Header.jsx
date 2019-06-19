@@ -65,6 +65,9 @@ export default class Header extends Component {
                         <li>
                             <Link to="/modal">test modal in IE</Link>
                         </li>
+                        <li>
+                            <Link to="/homework">home work</Link>
+                        </li>
                     </ul>
                 </div>
             </div>

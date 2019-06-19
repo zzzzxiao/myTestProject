@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Modal, Table, Button, Divider, Tag } from 'antd';
+import { Modal, Table, Button, Divider, Tag, Select } from 'antd';
+const { Option } = Select;
+import './modal.scss'
 export default class TestModal extends Component {
     state = {
         visible: false,
@@ -83,12 +85,29 @@ export default class TestModal extends Component {
             <Button type="primary" onClick={() => this._showModal()}>
                 Open Modal
             </Button>
+            <Select defaultValue="lucy" style={{ width: 120 }} onChange={this.handleChange}>
+                <Option value="jack">Jack</Option>
+                <Option value="lucy">Lucy</Option>
+                <Option value="disabled">
+                    Disabled
+                    </Option>
+                <Option value="Yiminghe">的风格豆腐干地方个豆腐干地鼓捣鼓捣飞给房东</Option>
+            </Select>
             <Modal
+            style={{wordWrap: 'normal'}}
                 title="Basic Modal"
                 visible={visible}
                 onOk={this._handleOk}
                 onCancel={this._handleCancel}
             >
+                <Select defaultValue="lucy" style={{ width: 120 }} onChange={this.handleChange}>
+                    <Option value="jack">Jack</Option>
+                    <Option value="lucy">Lucy</Option>
+                    <Option value="disabled">
+                        Disabled
+                    </Option>
+                    <Option value="Yiminghe">的风格豆腐干地方个豆腐干地鼓捣鼓捣飞给房东</Option>
+                </Select>
                 <Table
                     dataSource={dataSource}
                     rowKey="orderId"
@@ -128,5 +147,8 @@ export default class TestModal extends Component {
     }
     _changePageSize(current, pageSize) {
         this.setState({ pageSize, pageNum: 1 });
+    }
+    handleChange(value) {
+        console.log(`selected ${value}`);
     }
 }

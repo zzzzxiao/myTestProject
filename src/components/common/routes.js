@@ -7,6 +7,7 @@ import Topic from 'components/topic/topic';
 import Login from 'components/user/login';
 import Logout from 'components/user/logout';
 import Modal from 'components/modal/modal'
+import ES6Class from 'components/homework/ES6Class'
 const routes = [
     {
         path: '/index',
@@ -75,6 +76,13 @@ const routes = [
         exact: true,
         // authRight: true,
         component: Modal
+    },
+    {
+        path: '/homework',
+        name: 'homework',
+        exact: true,
+        // authRight: true,
+        component: ES6Class
     }
 ];
 export default routes;

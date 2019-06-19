@@ -10,7 +10,7 @@ module.exports = {
     // entry: [path.resolve(__dirname, 'src', 'index.js'),path.resolve(__dirname, 'src', 'base.js')],
     entry: {
         main: ["babel-polyfill","./src/index"],
-        vendor: ["babel-polyfill","react", "react-dom", "react-router", "lodash"]
+        vendor: ["react", "react-dom", "react-router", "lodash"]
     }, // string | object | array
     output: {
         publicPath: '/',
