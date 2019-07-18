@@ -6,8 +6,12 @@ import TodoListView from 'components/Index/todoListView';
 import Topic from 'components/topic/topic';
 import Login from 'components/user/login';
 import Logout from 'components/user/logout';
-import Modal from 'components/modal/modal'
-import ES6Class from 'components/homework/ES6Class'
+import Modal from 'components/modal/modal';
+import ES6Class from 'components/homework/ES6Class';
+// import Customtable from 'components/homework/complicatedTable'
+import EditScore from '../homework/editScore';
+import ReactContext from '../homework/context/reactContext';
+// import ReactContext from '../homework/context/ReactToggleContext';
 const routes = [
     {
         path: '/index',
@@ -83,6 +87,16 @@ const routes = [
         exact: true,
         // authRight: true,
         component: ES6Class
+    },{
+        path: '/customtable',
+        name: 'customtable',
+        exact: true,
+        component: EditScore
+    },{
+        path: '/reactcontext',
+        name: 'reactcontext',
+        exact: true,
+        component: ReactContext
     }
 ];
 export default routes;

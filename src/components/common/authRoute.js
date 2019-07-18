@@ -10,12 +10,13 @@ export default class AuthRoute extends Component {
         const { routes, component: Component, authRight, ...rest } = this.props;
         const { isAuthenticated } = authRight
         return <Route {...rest} render={props =>
-            isAuthenticated  || (rest.path === '/login') ? <Component {...props} routes={routes} /> : <Redirect
-                to={{
-                    pathname: "/login",
-                    state: { from: props.location }
-                }}
-            />
+            // isAuthenticated  || (rest.path === '/login') ? <Component {...props} routes={routes} /> : <Redirect
+            //     to={{
+            //         pathname: "/login",
+            //         state: { from: props.location }
+            //     }}
+            // />
+            <Component {...props} routes={routes} />
         } />
         // return <Route
         //     {...rest}

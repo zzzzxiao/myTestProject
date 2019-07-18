@@ -82,7 +82,8 @@ module.exports = {
             myHistory: path.resolve(__dirname, 'src/routes/history.js'),
             components: path.resolve(__dirname, 'src/components'),
             utils: path.resolve(__dirname, 'src/utils'),
-            myStateLessComponent: path.resolve(__dirname, 'src/components/common/stateLessComponent/index.js')
+            myStateLessComponent: path.resolve(__dirname, 'src/components/common/stateLessComponent/index.js'),
+            datas: path.resolve(__dirname, 'src/datas')
         }
     },
 

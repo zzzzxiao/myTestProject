@@ -34,6 +34,11 @@ export default class TodoListView extends Component {
             arr.concat([{ id, name, type, resType, parentNodes }], this._flattenTree(children)),
             [])
     }
+    _flattenTree1 = (data) => {
+        return data.reduce((arr, current) =>
+            arr.concat(current.children &&  current.children.length ? this._flattenTree(current.children) : current),
+            [])
+    }
     render() {
         const { todos, user } = store;
         // debugger;

@@ -11,7 +11,8 @@ module.exports = webpackMerge(basicConfig, {
         host: 'localhost',
         port: 8099,
         disableHostCheck: true,
-        // hot:true,
+        hot:true,
+        open: true,
         inline: true,// true: 代码更改，出发页面自动刷新
         historyApiFallback: true,
         contentBase: path.join(__dirname, 'build')
