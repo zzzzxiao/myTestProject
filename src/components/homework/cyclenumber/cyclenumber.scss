@@ -1,0 +1,16 @@
+.tags-wrapper{
+    .tag{
+        width: 30px;
+        display: inline-block;
+        height: 20px;
+        overflow: hidden;
+        line-height: 20px;
+        text-align: center;
+        background-color: #2886FD;
+        color: #fff;
+        margin-right: 2px;
+        .tag-cycle{
+            transition: margin .5s;
+        }
+    }
+}

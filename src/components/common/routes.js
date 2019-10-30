@@ -10,8 +10,11 @@ import Modal from 'components/modal/modal';
 import ES6Class from 'components/homework/ES6Class';
 // import Customtable from 'components/homework/complicatedTable'
 import EditScore from '../homework/editScore';
-import ReactContext from '../homework/context/reactContext';
+// import ReactContext from '../homework/context/reactContext';
+import ReactContext from '../homework/ContextDemo';
 // import ReactContext from '../homework/context/ReactToggleContext';
+import Test from '../homework/test/test';
+import CycleNumber from '../homework/cyclenumber/CycleNumber';
 const routes = [
     {
         path: '/index',
@@ -46,7 +49,13 @@ const routes = [
                         component: Topic,
                     }
                 ]
-            },
+            }, {
+                path: '/index/cyclenumber',
+                name: 'cyclenumber',
+                exact: true,
+                // authRight: false,
+                component: CycleNumber
+            }
         ]
     },{
         path: '/public',
@@ -97,6 +106,10 @@ const routes = [
         name: 'reactcontext',
         exact: true,
         component: ReactContext
+    },{
+        path:'/test',
+        name:'test',
+        component: Test
     }
 ];
 export default routes;

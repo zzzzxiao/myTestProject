@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ThemedButton from './ThemedButton';
-import { Button } from 'antd';
 import { MyContext, themes } from './context';
 
 export default class ReactContext extends React.Component {
