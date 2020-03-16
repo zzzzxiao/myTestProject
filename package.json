@@ -21,6 +21,8 @@
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.11",
+    "d3-geo": "^1.11.9",
+    "extend": "^3.0.2",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "html-loader": "^0.5.5",
@@ -45,6 +47,7 @@
   "dependencies": {
     "antd": "^3.5.3",
     "classnames": "^2.2.5",
+    "jQuery": "^1.7.4",
     "lodash": "^4.17.10",
     "mobx": "^4.3.0",
     "mobx-react": "^5.1.2",

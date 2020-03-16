@@ -1,0 +1,15 @@
+.input-wrapper {
+    width: 500px;
+    margin: 100px auto;
+    border: solid 1px #ccc;
+    text-align: center;
+    padding: 30px;
+
+    p {
+        margin: 10px 0;
+    }
+
+    input:invalid {
+        background-color: pink;
+    }
+}

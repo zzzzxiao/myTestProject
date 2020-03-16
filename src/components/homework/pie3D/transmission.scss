@@ -1,0 +1,48 @@
+.numItem {
+    width: 33.333%;
+    margin-top: 10px;
+    // padding-left: 93px;
+    float: left;
+
+    .leftChart {
+        width: 70px;
+        // width: 80px;
+        height: 74px;
+        // background: url(images/screenDisplay/index/creditMonitoring01.png) center bottom no-repeat;
+        background-size: contain;
+        position: relative;
+        float: left;
+        margin-left: 24px;
+        margin-right: 10px;
+        
+        .piechart {
+            width: 70px;
+            height: 66px;
+            position: absolute;
+            // top: -10px;
+        }
+    }
+
+    .num {
+        font-size: 27px;
+        font-family: "Teko-Regular";
+        line-height: 32px;
+
+        .unit {
+            font-size: 12px;
+        }
+    }
+
+    .dec {
+        font-size: 13px;
+
+        font-weight: bold;
+    }
+
+    .percent {
+        color: #fff;
+        font-size: 18px;
+        line-height: 8px;
+        font-family: "Teko-Regular";
+    }
+}

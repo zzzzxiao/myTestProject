@@ -1,0 +1,86 @@
+.gather-wraper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    // 数据浮动球
+    .data-ball{
+        width: 1920px;
+        height: 1080px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform-origin: 0 0;
+        // background: url(../../images/gather/gather-bg.png) no-repeat;
+        background: #eee;
+        transform-style:preserve-3d;
+
+        // 有4个浮动球
+        .data-ball-item{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            transition: 1s;
+            background: #2886FD;
+            border-radius: 50%;
+            .center-ball{
+                width: 318px;
+                height: 263px;
+                top: 50%;
+                left: 50%;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                z-index: 100;
+                font-size: 30px;
+                font-family: "Source Han Sans CN";
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+                line-height: 263px;
+                text-align: center;
+                text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.004);
+            }
+            // &.item1 {
+            //     left: 285px;
+            //     bottom: 154px;
+            // }
+
+            // &.item2 {
+            //     left: -10px;
+            //     bottom: 48px;
+
+            // }
+
+            // &.item3 {
+            //     left: 242px;
+            //     top: 160px;
+            // }
+
+            // &.item4 {
+            //     right: 0;
+            //     top: 50px;
+            // }
+            &.item1 {
+            // transform: scale(1);
+                top: 0;
+                left: 0;
+            }
+            &.item2 {
+                // transform: scale(0.3);
+                top: -5px;
+                left: -762px;
+            }
+            &.item3 {
+                // transform: scale(.2);
+                top: -249px;
+                left: -73px;
+            }
+            &.item4 {
+                // transform: scale(0.3);
+                top: -349px;
+                left: 738px;
+            }
+        }
+        
+    }
+}
