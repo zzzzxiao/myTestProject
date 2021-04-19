@@ -14,6 +14,9 @@ export default class Game extends React.Component {
             xIsNext: true
         };
     }
+    componentDidMount(){
+        document.getElementById('grow').addEventListener('click', grow);
+    }
 
     handleClick(i) {
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
@@ -76,6 +79,10 @@ export default class Game extends React.Component {
                     <div>{status}</div>
                     <ol>{moves}</ol>
                 </div>
+                <button id="grow">添加节点</button>
+                <div id="nodes">
+
+                </div>
             </div>
         );
     }
@@ -103,4 +110,12 @@ function calculateWinner(squares) {
         }
     }
     return null;
+}
+
+function grow() {
+    let x = [];
+    for (let i = 0; i < 10000; i++) {
+        document.getElementById('nodes').appendChild(document.createElement('div'));
+    }
+    x.push(new Array(1000000).join('x'));
 }

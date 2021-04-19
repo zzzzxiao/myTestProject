@@ -17,6 +17,11 @@ import Test from '../homework/test/test';
 import CycleNumber from '../homework/cyclenumber/CycleNumber';
 import Manyforms from '../homework/manyforms/Manyforms';
 import MyTest from '../homework/mytest/MyTest';
+import GoRound from '../homework/roundAnimation/GoRound';
+import Gather from '../homework/dataGather/Gather';
+import Html5 from '../homework/html5/Html5';
+import Canvas from '../homework/html5/Canvas';
+import Transmission from '../homework/pie3D/Transmission';
 const routes = [
     {
         path: '/index',
@@ -57,7 +62,32 @@ const routes = [
                 exact: true,
                 // authRight: false,
                 component: CycleNumber
-            }
+            },{
+                path:'/index/goRound',
+                name:'goRound',
+                exact: true,
+                component: GoRound
+            },{
+                path:'/index/gather',
+                name:'gather',
+                exact: true,
+                component: Gather
+            },{
+                path:'/index/html',
+                name:'html',
+                exact: true,
+                component: Html5 
+            },{
+                path:'/index/canvas',
+                name:'canvas',
+                exact: true,
+                component: Canvas
+            },{
+                path:'/index/transmission',
+                name:'transmission',
+                exact: true,
+                component: Transmission
+            },
         ]
     },{
         path: '/public',

@@ -4,6 +4,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const webpack = require("webpack");
 const extractStyle = new ExtractTextPlugin("css/style.css");
 const extractCommon = new ExtractTextPlugin("css/common.css");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     //多入口问题 数组的模式并不是多入口，以下入口最终只生成一个js
@@ -15,7 +16,7 @@ module.exports = {
     output: {
         publicPath: '/',
         path: path.resolve(__dirname, "build"),
-        filename: "js/[hash].[name].js"
+        filename: "assets/js/[hash].[name].js"
     },
 
     module: {
@@ -103,12 +104,12 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.ProvidePlugin({
-            _: "lodash",
-            $: 'jquery',
-            jQuery: 'jquery',
-            'window.jQuery': 'jquery'
-        }),
+        // new webpack.ProvidePlugin({
+        //     _: "lodash",
+        //     $: 'jquery',
+        //     jQuery: 'jquery',
+        //     'window.jQuery': 'jquery'
+        // }),
         new webpack.LoaderOptionsPlugin({
             minimize: true,
             debug: false,
@@ -126,7 +127,14 @@ module.exports = {
         // new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
         extractStyle,
-        extractCommon
+        extractCommon,
+        new CopyWebpackPlugin([
+          {
+            from: path.resolve(__dirname, 'src/assets'),
+            to: path.resolve(__dirname, 'build/assets'),
+            toType: 'dir'
+          }
+        ])
     ],
     stats: "errors-only"
     // 附加插件列表

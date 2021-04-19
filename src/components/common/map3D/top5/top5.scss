@@ -1,0 +1,134 @@
+@import "../../../screenDisplay/utils";
+
+.top5 {
+  width: 241px;
+  height: 289px;
+  background: url(images/screenDisplay/threejsMap/bg-map-toolip.png) center top no-repeat;
+  background-size: contain;
+
+  .date {
+    color: #4678F9;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: pxTovh(8);
+  }
+
+  .title {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    margin: 20px 0 0 20px;
+    padding-left: 13px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 3px;
+      height: 14px;
+      background: #4479FD;
+      left: 0px;
+      top: 50%;
+      margin-top: pxTovh(-7);
+    }
+  }
+
+  .content {
+    margin: pxTovh(5) 20px pxTovh(20) 35px;
+  }
+
+  table {
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+
+    tr,
+    td {
+      height: 40px;
+    }
+
+    .num {
+      display: inline-block;
+      text-align: left;
+      font-family: 'Teko-SemiBold';
+      color: #fff;
+      font-size: 30px;
+    }
+
+    .trend {
+      display: inline-block;
+      vertical-align: -2px;
+      width: 12px;
+      height: pxTovh(4);
+      background: url(images/screenDisplay/threejsMap/arrows-miuns.png) center center no-repeat;
+      background-size: contain;
+      margin-left: 10px;
+      vertical-align: middle;
+
+      &.down {
+        width: 13px;
+        height: 18px;
+        background: url(images/screenDisplay/threejsMap/arrows-down.png) center center no-repeat;
+        background-size: contain;
+      }
+
+      &.up {
+        width: 13px;
+        height: 18px;
+        background: url(images/screenDisplay/threejsMap/arrows-up.png) center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &.mini {
+    width: 179px;
+    height: pxTovh(214);
+    background: url(images/screenDisplay/threejsMap/bg-map-toolip-mini.png) center top no-repeat;
+
+    .content {
+      margin: 0 20px pxTovh(20) 25px;
+    }
+
+    .date {
+      font-size: 16px;
+    }
+
+    .title {
+      font-size: 14px;
+    }
+
+    table {
+      font-size: 14px;
+
+      tr,
+      td {
+        height: auto;
+      }
+
+      tr td:first-child {
+        font-weight: bold;
+      }
+      .city {
+        span{
+          line-height: 25px;
+        }
+      }
+      .num {
+        font-size: 20px;
+        line-height: 28px;
+        span{
+          padding-top: 2px;
+          display: inline-block;
+        }
+      }
+
+      .trend {
+        transform: scale(0.8);
+        margin-left: 8px;
+      }
+    }
+  }
+}
