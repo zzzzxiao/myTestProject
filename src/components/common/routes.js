@@ -15,6 +15,8 @@ import ReactContext from '../homework/ContextDemo';
 // import ReactContext from '../homework/context/ReactToggleContext';
 import Test from '../homework/test/test';
 import CycleNumber from '../homework/cyclenumber/CycleNumber';
+import Manyforms from '../homework/manyforms/Manyforms';
+import MyTest from '../homework/mytest/MyTest';
 const routes = [
     {
         path: '/index',
@@ -110,6 +112,16 @@ const routes = [
         path:'/test',
         name:'test',
         component: Test
+    },{
+        path: '/manyforms',
+        name: 'manyforms',
+        exact: true,
+        component: Manyforms
+    },{
+        path: '/myTest',
+        name: 'myTest',
+        exact: true,
+        component: MyTest
     }
 ];
 export default routes;
