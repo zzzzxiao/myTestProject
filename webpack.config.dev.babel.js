@@ -9,13 +9,19 @@ module.exports = webpackMerge(basicConfig, {
     devServer: {
         // host: '0.0.0.0',
         host: 'localhost',
-        port: 8099,
+        port: 9999,
         disableHostCheck: true,
         hot:true,
         open: true,
         inline: true,// true: 代码更改，出发页面自动刷新
         historyApiFallback: true,
-        contentBase: path.join(__dirname, 'build')
+        contentBase: path.join(__dirname, 'build'),
+        proxy: { //代理
+            '/api': {
+              target: 'http://172.31.15.104:30648',
+              pathRewrite: { '/api': '' }
+            }
+          }
     },
     plugins: [
         new webpack.DefinePlugin({
